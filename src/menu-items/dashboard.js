@@ -10,15 +10,39 @@ const icons = {
 
 const dashboard = {
     id: 'group-dashboard',
-    title: 'Navigation',
+    title: 'Menu',
     type: 'group',
     children: [
         {
-            id: 'dashboard',
-            title: 'Dashboard',
+            id: 'dealer',
+            title: 'Dealer',
             type: 'item',
             url: '/dashboard/default',
-            icon: icons.DashboardOutlined,
+            // icon: icons.DashboardOutlined,
+            breadcrumbs: false
+        },
+        {
+            id: 'subDealer',
+            title: 'Sub Dealer',
+            type: 'item',
+            url: '/dashboard/default',
+            // icon: icons.DashboardOutlined,
+            breadcrumbs: false
+        },
+        {
+            id: 'Hadiah',
+            title: 'Hadiah',
+            type: 'item',
+            url: '/jenis-hadiah',
+            // icon: icons.DashboardOutlined,
+            breadcrumbs: false
+        },
+        {
+            id: 'pemenang',
+            title: 'Pemenang Hadiah',
+            type: 'item',
+            url: '/dashboard/default',
+            // icon: icons.DashboardOutlined,
             breadcrumbs: false
         }
     ]

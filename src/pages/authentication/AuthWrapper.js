@@ -15,18 +15,15 @@ import AuthBackground from 'assets/images/auth/AuthBackground';
 
 const AuthWrapper = ({ children }) => (
     <Box sx={{ minHeight: '100vh' }}>
-        <AuthBackground />
+        {/* <AuthBackground /> */}
         <Grid
             container
             direction="column"
             justifyContent="flex-end"
             sx={{
-                minHeight: '100vh'
+                minHeight: '90vh'
             }}
         >
-            <Grid item xs={12} sx={{ ml: 3, mt: 3 }}>
-                <Logo />
-            </Grid>
             <Grid item xs={12}>
                 <Grid
                     item
@@ -40,9 +37,6 @@ const AuthWrapper = ({ children }) => (
                         <AuthCard>{children}</AuthCard>
                     </Grid>
                 </Grid>
-            </Grid>
-            <Grid item xs={12} sx={{ m: 3, mt: 1 }}>
-                <AuthFooter />
             </Grid>
         </Grid>
     </Box>
