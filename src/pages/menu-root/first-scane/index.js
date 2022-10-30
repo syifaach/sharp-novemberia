@@ -3,6 +3,7 @@ import { Grid, Card, Button } from '@mui/material';
 // import { DataGrid } from '@mui/x-data-grid';
 import { DataGrid } from '@mui/x-data-grid';
 import { useNavigate } from 'react-router-dom';
+import { getAll, getById } from 'services/global-service';
 
 const Header = () => {
     const imageStyle = {
@@ -13,8 +14,14 @@ const Header = () => {
     };
     return (
         <Card
-            className="p-5"
-            style={{ backgroundColor: '#DD5353', color: 'white', borderBottomLeftRadius: '20px', borderBottomRightRadius: '20px' }}
+            className="px-5"
+            style={{
+                backgroundColor: '#DD5353',
+                color: 'white',
+                padding: '50px',
+                borderBottomLeftRadius: '20px',
+                borderBottomRightRadius: '20px'
+            }}
         >
             <img alt="sharp" src={require('assets/images/logo/sharp-logo-white.png')} style={imageStyle} />
             <div style={{ marginTop: '80px', marginBottom: '80px' }}>
@@ -45,7 +52,10 @@ const FirstScane = () => {
         <Grid container spacing={3}>
             <Grid item xs={12}>
                 <Header />
-                <div className="d-flex justify-content-center" style={{ marginTop: '80px', marginBottom: '80px' }}>
+                <div
+                    className="d-flex justify-content-center"
+                    style={{ marginTop: '80px', marginBottom: '80px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}
+                >
                     <Button style={style.buttonStyle} onClick={onClickBtn}>
                         Submit All Data and Play the Game
                     </Button>
