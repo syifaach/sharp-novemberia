@@ -1,6 +1,7 @@
 import MinimalLayout from 'layout/MinimalLayout/index';
 import FirstScane from 'pages/menu-root/first-scane/index';
 import MenuRoot from 'pages/menu-root/form/index';
+import SpinWhelee from 'pages/menu-root/spin/index';
 
 // render - dashboard
 
@@ -17,6 +18,10 @@ const RootRoutes = {
         {
             path: '/form-submit',
             element: <MenuRoot />
+        },
+        {
+            path: '/spin-whelee',
+            element: <SpinWhelee />
         }
     ]
 };
