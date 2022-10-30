@@ -283,6 +283,7 @@ const MenuRoot = () => {
                                         type="submit"
                                         variant="contained"
                                         color="primary"
+                                        onClick={() => router('/spin-whelee')}
                                     >
                                         submit
                                     </Button>
